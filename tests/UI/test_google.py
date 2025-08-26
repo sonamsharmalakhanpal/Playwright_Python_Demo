@@ -9,4 +9,6 @@ def test_api_response():
         browser.close()
 
     # venv/Scripts/activate
-    # pytest ./tests/UI/test_google.py --browser=chromium --headed --video=on
+    # pytest ./tests/UI/test_google.py --browser=chromium --headed --html=report.html 
+    # pip install pytest-html (install once before running above command for report generation)
+    
