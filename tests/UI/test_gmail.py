@@ -11,3 +11,4 @@ def test_gmail_login(page: Page):
 
 # venv/Scripts/activate
 # pytest ./tests/UI/test_gmail.py --headed --browser=chromium --tracing=on
+# playwright show-trace ./test-results/trace.zip

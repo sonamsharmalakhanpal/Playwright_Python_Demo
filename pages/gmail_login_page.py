@@ -17,7 +17,7 @@ class gmailPage:
         self.page.wait_for_timeout(2000)  # Wait for password field to appear
         self.password_input.fill(password)
         self.next_button.click()
-        self.page.wait_for_load_state("networkidle")
+        # self.page.wait_for_load_state("networkidle")
 
     def verify_login(self):
         return self.inbox_label.is_visible()
