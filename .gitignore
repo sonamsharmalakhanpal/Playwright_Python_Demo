@@ -93,3 +93,10 @@ screenshots/
 .png
 .jpg
 .jpeg
+
+#videos
+videos/
+.mp4
+
+#trace files
+trace.zip
