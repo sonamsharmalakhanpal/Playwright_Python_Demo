@@ -79,6 +79,7 @@ venv.bak/
 
 # Playwright
 playwright-report/
+test-results/
 
 # Mac
 .DS_Store
@@ -87,6 +88,7 @@ playwright-report/
 Thumbs.db
 
 #screenshots
+.png
 screenshots/
 .png
 .jpg

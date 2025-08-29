@@ -12,9 +12,16 @@ def browser_context():
         browser = p.chromium.launch(headless=False)
         context = browser.new_context(
             viewport={"width": 1280, "height": 720},
-            user_agent="MyCustomUserAgent/1.0",
-            record_video_dir="./test-results/videos"  # Directory to save videos
-        )
+            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36",
+            locale="en-US",
+            timezone_id="America/New_York",
+            geolocation={"longitude": -74.0060, "latitude": 40.7128},
+            permissions=["geolocation"],
+            device_scale_factor=1,
+            is_mobile=False,
+            accept_downloads=True,
+            record_video_dir="./test-results/videos"
+)
         # Start tracing
         context.tracing.start(screenshots=True, snapshots=True, sources=True)
         yield context
